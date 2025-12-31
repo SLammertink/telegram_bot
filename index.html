@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NYSE Clock Widget</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="widget" aria-live="polite">
+      <header class="widget__header">
+        <h1 class="widget__title">NYSE Clock</h1>
+        <p class="widget__subtitle">Eastern Time (New York)</p>
+      </header>
+      <section class="widget__clock" aria-label="NYSE clock status">
+        <span id="time" class="widget__time">--:--:--</span>
+        <span id="status" class="widget__status">Loading...</span>
+      </section>
+      <footer class="widget__footer">
+        <span id="session" class="widget__session">Session: 9:30 AM – 4:00 PM ET</span>
+      </footer>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
